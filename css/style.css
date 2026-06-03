@@ -15,6 +15,7 @@ body {
         "sidebar main"
         "footer footer";
     background-color: #ffffff;
+    gap: 10px;
 }
 
 header {
@@ -28,12 +29,18 @@ header {
 }
 
 aside {
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px ;
     grid-area: sidebar;
     background: #f4f4f4;
     padding: 20px;
+    box-shadow: 0 0 15px 5px rgba(17, 17, 17, 0.2);
 }
 
 main {
+    box-shadow: 0 0 15px 5px rgba(17, 17, 17, 0.2);
+    border-top-left-radius: 10px ;
+    border-bottom-left-radius: 10px ;
     grid-area: main;
     background: #ffffff;
     padding: 30px;
@@ -41,6 +48,12 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 20px;
+}
+
+h1{
+    padding: 10px;
+    border-bottom: solid rgba(0, 0, 0, 0.452);
 }
 
 main h1 {
@@ -125,7 +138,7 @@ th {
 }
 
 .table-link {
-    color: #0066cc;
+    color: #575757;
     text-decoration: none;
 }
 
@@ -141,6 +154,52 @@ th {
 
 .btn-whatsapp:hover {
     text-decoration: underline;
+}
+
+
+h2{
+    border-bottom: solid #444444;
+    padding: 10px;
+}
+
+nav{
+    max-width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-left: solid #8d8d8d;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+nav a{
+    padding: 10px;
+    background: #f4f4f4;
+    text-decoration: none;
+    color: gray;
+    transition: 0.1s;;
+}
+
+nav a:hover{
+    background-color: #aaaaaa;
+}
+
+.conceitos{
+    background: #f4f4f4;
+    text-align: center;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 25px 3px rgba(17, 17, 17, 0.2);
+    width: 600px;
+    max-width: 600px;
+    align-items: center;
+}
+
+img{
+    width: 250px;
 }
 
 @media (max-width: 500px) {
