@@ -190,7 +190,7 @@ a:hover{
     padding: 30px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 16px;
     border-radius: 10px;
     box-shadow: 0 0 25px 3px rgba(17, 17, 17, 0.2);
     max-width: 600px;
